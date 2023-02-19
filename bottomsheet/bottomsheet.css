@@ -95,8 +95,7 @@ bottom-sheet[aria-hidden="true"] {
   right: 0px;
   background: transparent;
   border: none;
-}
-.customBottomsheet .close__btn {
+  cursor: pointer;
   font-size: 18px;
 }
 .customBottomsheet .content {
@@ -143,4 +142,5 @@ bottom-sheet[aria-hidden="true"] {
   background: #000;
   color: #fff;
   padding: 10px 20px;
+  cursor: pointer;
 }
