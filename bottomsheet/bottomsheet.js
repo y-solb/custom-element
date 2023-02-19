@@ -17,7 +17,7 @@ class BottomSheet extends HTMLElement {
     this.defaultVh = 0;
     this.beforeVh = 0;
     this.sheetHeight; // in vh
-    this.sheetWrapper; // div .sheet__wrapper
+    this.sheetWrapper; // .sheet__wrapper
   }
 
   connectedCallback() {
@@ -162,6 +162,7 @@ class BottomSheet extends HTMLElement {
   }
 
   openSheet() {
+    this.beforeVh = 0;
     this.setSheetHeight(this.defaultVh);
     this.setIsSheetShown(true);
   }
@@ -172,6 +173,7 @@ class BottomSheet extends HTMLElement {
   }
 
   fullSheet() {
+    this.beforeVh = 100;
     this.setSheetHeight(100);
   }
 }
